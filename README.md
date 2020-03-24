@@ -12,7 +12,7 @@ This repository contains code that I implemented to create browser extensions fo
 ## Steps followed in developing each Browser Extension
 ### Firefox Extension
 
-I referred the official Mozilla developer documentation to create the [Firefox pluggin: Magnify](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Your_first_WebExtension)
+Reference: [Official Mozilla developer documentation to create the Firefox pluggin: Borderify](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Your_first_WebExtension)
 
 1. Created manifest.json
 2. Included manifest_version, name, version, description, icons, content_scripts in manifest.json
@@ -22,5 +22,10 @@ I referred the official Mozilla developer documentation to create the [Firefox p
 
 ### Chrome Extension
 
+Reference: [Chrome Extensions: Getting started Tutorial](https://developer.chrome.com/extensions/getstarted)
 
 ### Safari Extension
+
+Reference: [How to Build Safari App Extensions](https://ulriklyngs.com/post/2018/11/02/how-to-build-safari-app-extensions/)
+
+The Safari extension couldn't be tested since the latest versions of Safari in MacOS do not support extensions that do not have a certificate.

@@ -1,0 +1,1 @@
+document.body.style.border = "5px solid red";   // draw a border around the document.body

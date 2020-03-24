@@ -1,0 +1,1 @@
+document.body.style.fontSize = "70px";   // magnify the content in document.body

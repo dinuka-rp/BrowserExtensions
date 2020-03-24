@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C4123E92429D80E007E21A2 /* FB_View_Controller.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 3C4123E82429D80E007E21A2 /* FB_View_Controller.entitlements */; };
+		3C4123EB2429D80E007E21A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4123EA2429D80E007E21A2 /* AppDelegate.swift */; };
+		3C4123EE2429D80E007E21A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C4123EC2429D80E007E21A2 /* Main.storyboard */; };
+		3C4123F02429D80E007E21A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4123EF2429D80E007E21A2 /* ViewController.swift */; };
+		3C4123F22429D80E007E21A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C4123F12429D80E007E21A2 /* Assets.xcassets */; };
+		3C4123F92429D80F007E21A2 /* FB View Controller Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3C4123F82429D80F007E21A2 /* FB View Controller Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3C4123FE2429D80F007E21A2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C4123FD2429D80F007E21A2 /* Cocoa.framework */; };
+		3C4124012429D80F007E21A2 /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4124002429D80F007E21A2 /* SafariExtensionHandler.swift */; };
+		3C4124032429D80F007E21A2 /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4124022429D80F007E21A2 /* SafariExtensionViewController.swift */; };
+		3C4124062429D80F007E21A2 /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C4124042429D80F007E21A2 /* SafariExtensionViewController.xib */; };
+		3C4124092429D80F007E21A2 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 3C4124082429D80F007E21A2 /* script.js */; };
+		3C41240B2429D80F007E21A2 /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3C41240A2429D80F007E21A2 /* ToolbarItemIcon.pdf */; };
+		3C4124172429D85F007E21A2 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 3C4124162429D85F007E21A2 /* style.css */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3C4123FA2429D80F007E21A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C4123DD2429D80E007E21A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C4123F72429D80F007E21A2;
+			remoteInfo = "FB View Controller Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3C4124122429D80F007E21A2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3C4123F92429D80F007E21A2 /* FB View Controller Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3C4123E52429D80E007E21A2 /* FB View Controller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FB View Controller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C4123E82429D80E007E21A2 /* FB_View_Controller.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FB_View_Controller.entitlements; sourceTree = "<group>"; };
+		3C4123EA2429D80E007E21A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3C4123ED2429D80E007E21A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3C4123EF2429D80E007E21A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3C4123F12429D80E007E21A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3C4123F32429D80E007E21A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C4123F82429D80F007E21A2 /* FB View Controller Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "FB View Controller Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C4123FD2429D80F007E21A2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		3C4124002429D80F007E21A2 /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
+		3C4124022429D80F007E21A2 /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
+		3C4124052429D80F007E21A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
+		3C4124072429D80F007E21A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C4124082429D80F007E21A2 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		3C41240A2429D80F007E21A2 /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
+		3C41240C2429D80F007E21A2 /* FB_View_Controller_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FB_View_Controller_Extension.entitlements; sourceTree = "<group>"; };
+		3C4124162429D85F007E21A2 /* style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C4123E22429D80E007E21A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C4123F52429D80F007E21A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C4123FE2429D80F007E21A2 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C4123DC2429D80E007E21A2 = {
+			isa = PBXGroup;
+			children = (
+				3C4123E72429D80E007E21A2 /* FB View Controller */,
+				3C4123FF2429D80F007E21A2 /* FB View Controller Extension */,
+				3C4123FC2429D80F007E21A2 /* Frameworks */,
+				3C4123E62429D80E007E21A2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3C4123E62429D80E007E21A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C4123E52429D80E007E21A2 /* FB View Controller.app */,
+				3C4123F82429D80F007E21A2 /* FB View Controller Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C4123E72429D80E007E21A2 /* FB View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3C4123E82429D80E007E21A2 /* FB_View_Controller.entitlements */,
+				3C4123EA2429D80E007E21A2 /* AppDelegate.swift */,
+				3C4123EC2429D80E007E21A2 /* Main.storyboard */,
+				3C4123EF2429D80E007E21A2 /* ViewController.swift */,
+				3C4123F12429D80E007E21A2 /* Assets.xcassets */,
+				3C4123F32429D80E007E21A2 /* Info.plist */,
+			);
+			path = "FB View Controller";
+			sourceTree = "<group>";
+		};
+		3C4123FC2429D80F007E21A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C4123FD2429D80F007E21A2 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3C4123FF2429D80F007E21A2 /* FB View Controller Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3C4124002429D80F007E21A2 /* SafariExtensionHandler.swift */,
+				3C4124022429D80F007E21A2 /* SafariExtensionViewController.swift */,
+				3C4124042429D80F007E21A2 /* SafariExtensionViewController.xib */,
+				3C4124072429D80F007E21A2 /* Info.plist */,
+				3C4124082429D80F007E21A2 /* script.js */,
+				3C41240A2429D80F007E21A2 /* ToolbarItemIcon.pdf */,
+				3C41240C2429D80F007E21A2 /* FB_View_Controller_Extension.entitlements */,
+				3C4124162429D85F007E21A2 /* style.css */,
+			);
+			path = "FB View Controller Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3C4123E42429D80E007E21A2 /* FB View Controller */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C4124132429D80F007E21A2 /* Build configuration list for PBXNativeTarget "FB View Controller" */;
+			buildPhases = (
+				3C4123E12429D80E007E21A2 /* Sources */,
+				3C4123E22429D80E007E21A2 /* Frameworks */,
+				3C4123E32429D80E007E21A2 /* Resources */,
+				3C4124122429D80F007E21A2 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C4123FB2429D80F007E21A2 /* PBXTargetDependency */,
+			);
+			name = "FB View Controller";
+			productName = "FB View Controller";
+			productReference = 3C4123E52429D80E007E21A2 /* FB View Controller.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3C4123F72429D80F007E21A2 /* FB View Controller Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C41240F2429D80F007E21A2 /* Build configuration list for PBXNativeTarget "FB View Controller Extension" */;
+			buildPhases = (
+				3C4123F42429D80F007E21A2 /* Sources */,
+				3C4123F52429D80F007E21A2 /* Frameworks */,
+				3C4123F62429D80F007E21A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FB View Controller Extension";
+			productName = "FB View Controller Extension";
+			productReference = 3C4123F82429D80F007E21A2 /* FB View Controller Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3C4123DD2429D80E007E21A2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Dinuka Piyadigama";
+				TargetAttributes = {
+					3C4123E42429D80E007E21A2 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					3C4123F72429D80F007E21A2 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+				};
+			};
+			buildConfigurationList = 3C4123E02429D80E007E21A2 /* Build configuration list for PBXProject "FB View Controller" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3C4123DC2429D80E007E21A2;
+			productRefGroup = 3C4123E62429D80E007E21A2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C4123E42429D80E007E21A2 /* FB View Controller */,
+				3C4123F72429D80F007E21A2 /* FB View Controller Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3C4123E32429D80E007E21A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C4123E92429D80E007E21A2 /* FB_View_Controller.entitlements in Resources */,
+				3C4123F22429D80E007E21A2 /* Assets.xcassets in Resources */,
+				3C4123EE2429D80E007E21A2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C4123F62429D80F007E21A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C41240B2429D80F007E21A2 /* ToolbarItemIcon.pdf in Resources */,
+				3C4124172429D85F007E21A2 /* style.css in Resources */,
+				3C4124062429D80F007E21A2 /* SafariExtensionViewController.xib in Resources */,
+				3C4124092429D80F007E21A2 /* script.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C4123E12429D80E007E21A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C4123F02429D80E007E21A2 /* ViewController.swift in Sources */,
+				3C4123EB2429D80E007E21A2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C4123F42429D80F007E21A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C4124032429D80F007E21A2 /* SafariExtensionViewController.swift in Sources */,
+				3C4124012429D80F007E21A2 /* SafariExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3C4123FB2429D80F007E21A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C4123F72429D80F007E21A2 /* FB View Controller Extension */;
+			targetProxy = 3C4123FA2429D80F007E21A2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3C4123EC2429D80E007E21A2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C4123ED2429D80E007E21A2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3C4124042429D80F007E21A2 /* SafariExtensionViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C4124052429D80F007E21A2 /* Base */,
+			);
+			name = SafariExtensionViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3C41240D2429D80F007E21A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3C41240E2429D80F007E21A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		3C4124102429D80F007E21A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "FB View Controller Extension/FB_View_Controller_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "FB View Controller Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lk.dinuka.FB-View-Controller-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3C4124112429D80F007E21A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "FB View Controller Extension/FB_View_Controller_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "FB View Controller Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lk.dinuka.FB-View-Controller-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		3C4124142429D80F007E21A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "FB View Controller/FB_View_Controller.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "FB View Controller/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lk.dinuka.FB-View-Controller";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3C4124152429D80F007E21A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "FB View Controller/FB_View_Controller.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "FB View Controller/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lk.dinuka.FB-View-Controller";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C4123E02429D80E007E21A2 /* Build configuration list for PBXProject "FB View Controller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C41240D2429D80F007E21A2 /* Debug */,
+				3C41240E2429D80F007E21A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C41240F2429D80F007E21A2 /* Build configuration list for PBXNativeTarget "FB View Controller Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C4124102429D80F007E21A2 /* Debug */,
+				3C4124112429D80F007E21A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C4124132429D80F007E21A2 /* Build configuration list for PBXNativeTarget "FB View Controller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C4124142429D80F007E21A2 /* Debug */,
+				3C4124152429D80F007E21A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3C4123DD2429D80E007E21A2 /* Project object */;
+}
